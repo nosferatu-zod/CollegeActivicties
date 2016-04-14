@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 
 // @author Wesley Millan Silva
 /*Validador de CPF*/
@@ -8,7 +7,7 @@
 int main(){
 	
 	int numerocpf[10];
-	int i;
+	int i, c=0;
 	int resultado1, resultado2, dverificador1, dverificador2;
 	
 	printf("Digite seu CPF: ");
@@ -47,7 +46,7 @@ int main(){
 	
 	soma2= (numerocpf[0]*11)+(numerocpf[1]*10)+(numerocpf[2]*9)+(numerocpf[3]*8)
 	+(numerocpf[4]*7)+(numerocpf[5]*6)
-	+(numerocpf[6]*5)+(numerocpf[7]*4)+(numerocpf[8]*3);
+	+(numerocpf[6]*5)+(numerocpf[7]*4)+(numerocpf[8]*3+(numerocpf[9]*2));
 	
 	resultado2=soma2%11;
 	
